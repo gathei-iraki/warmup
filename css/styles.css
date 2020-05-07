@@ -1,0 +1,44 @@
+#start{
+  text-align: center;
+  font-family: 'Bangers', cursive;
+}
+h3{
+ text-align: center;
+ padding-top: 20px;
+ letter-spacing: 1px;
+ font-size: 35px;
+}
+.container{
+  margin-top: -30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 300px;
+  width: 300px;
+  border-color: aquamarine;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 50%;
+
+}
+.container #timer{
+  position: absolute;
+  top: 40%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+#btn{
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding:12px 10px;
+  border: none;
+  background-color: burlywood;
+  cursor: no-drop;
+
+}
+#whole{
+  font-family: 'Indie Flower', cursive;
+}
