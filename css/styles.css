@@ -1,44 +1,117 @@
-#start{
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+}
+.footer {
+  padding-bottom: 2em;
+  color: white;
+  font-style: italic;
+  font-weight: 100;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  padding-top: 10vh;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), radial-gradient(at top center, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.40) 120%) #989898;
+  background-blend-mode: multiply, multiply;
+}
+
+.timer {
+  min-height: 400px;
+  width: 90vw;
+  margin: auto;
+  background-color: white;
+  box-shadow: 0px 2px 18px rgba(0, 0, 0, 0.6);
+  display: flex;
+}
+
+span {
+  font-size: 8em;
+}
+
+.clock {
+  margin: auto;
+}
+
+.indicators {
+  font-size: 1.2em;
   text-align: center;
-  font-family: 'Bangers', cursive;
+  font-weight: 100;
 }
-h3{
- text-align: center;
- padding-top: 20px;
- letter-spacing: 1px;
- font-size: 35px;
-}
-.container{
-  margin-top: -30px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  height: 300px;
-  width: 300px;
-  border-color: aquamarine;
-  border-width: 2px;
-  border-style: solid;
-  border-radius: 50%;
 
+.stBtn {
+  text-align: center;
+  font-size: 2em;
+  width: 150px;
+  height: 70px;
+  line-height: 70px;
+  background-color: aquamarine;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+  margin-right: 0.5em;
+  border-radius: 12px;
+  cursor: pointer;
 }
-.container #timer{
-  position: absolute;
-  top: 40%;
-  left:50%;
-  transform: translate(-50%,-50%);
-}
-#btn{
-  position: absolute;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  padding:12px 10px;
-  border: none;
-  background-color: burlywood;
-  cursor: no-drop;
 
+.refresh {
+  text-align: center;
+  font-size: 2em;
+  width: 150px;
+  height: 70px;
+  line-height: 70px;
+  background-color: aquamarine;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+  border-radius: 12px;
+  cursor: pointer;
 }
-#whole{
-  font-family: 'Indie Flower', cursive;
+
+.controls {
+  display: flex;
+  justify-content: center;
+}
+
+.red {
+  background-color: red;
+}
+
+#ado {
+  display: none;
+}
+
+
+
+
+#circuitone{
+  font-family: 'Noto Sans JP', sans-serif;
+  background-color: bisque;
+}
+#stretches{
+  font-family: 'Bebas Neue', cursive;
+  color: whitesmoke;
+  background-color: black;
+}
+#circuittwo{
+  font-family: 'Caveat', cursive;
+  color: whitesmoke;
+  background-color: grey;
+}
+#warmup{
+  font-family: 'Noto Sans JP', sans-serif;
+}
+.rest{
+  color: red;
+}
+
+#title{
+  text-align: center;
+}
+@media only screen and (min-width: 420px) {
+  .timer {
+    width: 400px;
+  }
 }
