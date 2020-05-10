@@ -1,21 +1,81 @@
-<<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>MOODIFY</title>
-      <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-      <link href= "css/styles.css" rel="stylesheet" type="text/css">
-      <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Modak&display=swap" rel="stylesheet">
+<html lang="en">
 
-  </head>
-  <body>
-    <div id="whole">
-    <h3>SIKE NIBBA</h3>
-   <div class="container">
-    <h1 class="timer"  id="timer" ></h1>
-   </div>
-   <button class="btn" id="btn">wait</button>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A simple Pomo Timer">
+  <link href="./css/styles.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Noto+Sans+JP:wght@700&display=swap" rel="stylesheet">
+  
+  
+  <title>WORKOUT PROGRAM</title>
+</head>
+
+
+<body>
+    <div id="title"><h1>WORKOUT PROGRAM</h1></div>
+  <div class="container">
+    <div class="timer">
+      <div class="clock"><span contenteditable="true" id="min">10</span><span>:</span><span contenteditable="true" id="sec">10</span>
+        <div class="indicators">Min&nbsp;&nbsp;:&nbsp;&nbsp;Sec</div>
+      </div>
+
+    </div>
+    <div class="controls">
+      <div class='stBtn'>Start</div>
+      <div class='refresh'>Reset</div>
+    </div>
+    <div class="footer" align="center">Click on the numbers of the timer to edit</div>
   </div>
-<script src="./js/pizza.js"></script>
-  </body>
+  <audio id="ado" src="./audio/exer.mp3" controls="true"></audio>
+
+  <div id="warmup">
+      <h1>WARMUP:2 ROUNDS, 30SECONDS EACH</h1>
+      <p>1) 360 DEGREES WRIST TWISTS <br>
+         2) SUMO SQUATS AND PUNCHOUTS <br>
+         3) JOG IN PLACE<br>
+         4) BUTT KICKS<br>
+         5)LEGS AND ARMS SHUFFLES<br>
+         6)PLANK SHOULDER TAPS
+           <div class="rest">    ONE MINUTE REST</div> 
+  </div>
+</p>
+  <div id="circuitone">
+      <h1>CIRCUIT 1 PACE SETTER: 3-5 ROUNDS, 40 SECONDS EACH </h1>
+      <p>1)HIGH KNEE JOGS<br>
+        <div class="rest">   45 seconds Rest </div> <br>
+         2)PLANK JACKS <br>   
+         <div class="rest">  45 seconds Rest </div> <br>
+         3)REVERSE PLANK EXTENSIONS<br>
+         <div class="rest">  90 seconds Rest </div> <br>
+                 
+      </p>
+
+
+  </div>
+
+  <div id="circuittwo">
+      <h1>CIRCUIT 2 LADDER SUPER-SET: 5-10 ROUNDS</h1>
+      <p>1) 1 COUNT FULL BURPEE <br>
+         2) 2 COUNTS SQUAT JUMPS <br>
+         3) 3 COUNTS PUSHUPS <br>
+         4) 4 COUNTS MOUNTAIN CLIMBERS <br>
+         5) 5 COUNTS JUMPING JACKS <br>
+        </p>
+  </div>
+
+  <div id="stretches">
+    <h1>FINAL STATIC STRETCHES: 30 SECONDS EACH </h1>
+        <p>1) QUAD STRETCH <br>
+           2) SHOULDER STRETCH<br>
+           3) TRICEP STRETCH <br>
+           4) COBRA STRETCH <br>
+           5) SUPERMANS
+        </p>
+  </div>
+
+   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="./js/pizza.js"></script>
+</body>
+
 </html>
